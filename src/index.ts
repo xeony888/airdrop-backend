@@ -2,10 +2,10 @@ import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import bs58 from "bs58";
 import { Connection, Keypair, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
-import { generateId } from "./utils";
-import { main as airdrop, getAirdropStatus } from "./airship-ts/index"
-import { Airdrop } from "./airdrop";
-import { verifyAirdrop, verifySig } from "./middleware";
+import { generateId } from "./utils.js";
+import { main as airdrop, getAirdropStatus } from "./airship-ts/index.js"
+import { Airdrop } from "./airdrop.js";
+import { verifyAirdrop, verifySig } from "./middleware.js";
 import { PrismaClient } from "@prisma/client";
 import { type Airdrop as AirdropModel } from "@prisma/client";
 import { getAccount, getAssociatedTokenAddressSync } from "@solana/spl-token";

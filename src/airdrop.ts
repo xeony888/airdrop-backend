@@ -1,5 +1,5 @@
 import { PublicKey, Keypair } from "@solana/web3.js";
-import { main as airdrop } from "./airship-ts/index";
+import { main as airdrop } from "./airship-ts/index.js";
 export class Airdrop {
     id: string;
     finished: boolean;
@@ -17,7 +17,7 @@ export class Airdrop {
     }
     async run() {
         if (this.finished) throw new Error("Airdrop already ran");
-       await airdrop(this.keypair, process.env.RPC_URL, this.mintAddress, this.targetAddresses, this.amount);
-       this.finished = true;
+        await airdrop(this.keypair, process.env.RPC_URL, this.mintAddress, this.targetAddresses, this.amount);
+        this.finished = true;
     }
 }
