@@ -15,7 +15,7 @@ export async function create({
   amount,
   mintAddress,
 }) {
-    
+
   await airdropsender.create({
     // @ts-ignore
     db,

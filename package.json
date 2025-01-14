@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node --esm src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +23,11 @@
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.38.3",
     "express": "^4.21.2",
-    "helius-airship": "^0.8.4",
     "helius-airship-core": "^0.5.4",
     "nodemon": "^3.1.9",
+    "ora": "^8.1.1",
     "sqlocal": "^0.13.0",
+    "tinypool": "^1.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
