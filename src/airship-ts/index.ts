@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import chalk from "chalk";
 import * as web3 from "@solana/web3.js";
 import {
   status,
@@ -101,7 +100,7 @@ export async function getAirdropStatus() {
 
 
 function exitProgram() {
-  console.log(chalk.green("\nExiting..."));
+  console.log("\nExiting...");
   process.exit(0);
 }
 
