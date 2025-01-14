@@ -25,7 +25,6 @@
     "express": "^4.21.2",
     "helius-airship-core": "^0.5.4",
     "nodemon": "^3.1.9",
-    "ora": "^8.1.1",
     "sqlocal": "^0.13.0",
     "tinypool": "^1.0.2",
     "ts-node": "^10.9.2",
