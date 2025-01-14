@@ -3,3 +3,4 @@ node_modules
 wallets
 csvs
 airship.*
+dist
