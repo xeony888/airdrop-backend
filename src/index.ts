@@ -30,6 +30,9 @@ export const prisma = new PrismaClient();
 const connection = new Connection(process.env.RPC_URL);
 const airdropqueue: Airdrop[] = [];
 let inProgressStatus: { total: any, sent: any, finalized: any } = { total: 1, sent: 1, finalized: 1 };
+app.get("/heartbeat", async (req, res) => {
+    res.status(200).json({ message: "Hello World" });
+})
 app.get("/:wallet/airdrops", async (req, res) => {
     try {
         const { wallet } = req.query as { wallet: string };
