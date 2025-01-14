@@ -108,6 +108,7 @@ app.post("/airdrop", verifySig, verifyAirdrop, async (req, res) => {
     }
 })
 async function main() {
+    console.log(`Node.js version: ${process.version}`);
     while (true) {
         const airdrop = airdropqueue[0];
         if (airdrop) {
